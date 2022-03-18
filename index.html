@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <audio  src="https://music.163.com/song/media/outer/url?id=1422134833.mp3"  id="myaudio" loop="loop" preload="auto" autoplay="autoplay">
+
+    </audio>
+
+
     <meta charset="UTF-8">
     <title>高文静个人简历</title>
 
@@ -166,7 +172,7 @@
 
         @media screen and (min-width: 1200px) {
             .sky-container {
-                top: 40px;
+                top: 10px;
                 left: 80px;
             }
         }
@@ -288,8 +294,19 @@
             <div class="left-plane"></div>
             <div class="right-plane"></div>
         </div>
-        <div class="text">点击进入</div>
+        <div class="text" onclick="swap_music()">点击进入</div>
     </div>
+    <script>
+        function swap_music() {undefined
+            var oAudio = document.getElementById('myaudio');
+            if (oAudio.paused) {undefined
+                oAudio.play();
+            }
+            else {undefined
+                oAudio.pause();
+            }
+        }
+    </script>
 </div>
 <div class="sky-container">
     <div class="text-left sky-container__left">
